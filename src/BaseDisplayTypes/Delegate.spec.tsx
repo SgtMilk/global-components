@@ -45,7 +45,7 @@ test("Object delegate", () => {
 });
 
 test("String delegate", () => {
-  const delegate = render(<Delegate value={""} />);
+  const delegate = render(<Delegate value={"string"} />);
   expect(delegate).toBeTruthy();
   expect(screen.getAllByTestId("StringDisplay")).toHaveLength(1);
 });
