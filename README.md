@@ -31,5 +31,5 @@ These components will create an input for the dictated type. The `Form` componen
 
 Here is a list of other components that are included in this library:
 
-- Button
-- Spacer
+- `Button`
+- `Spacer`

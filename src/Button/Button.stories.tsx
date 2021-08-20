@@ -7,8 +7,18 @@ export default {
 };
 
 export const Default = () => {
+  return <Button onClick={() => {}}>Submit</Button>;
+};
+
+export const Green = () => {
   return (
-    <Button size={1} onClick={() => {}}>
+    <Button
+      size={1}
+      onClick={() => {}}
+      backgroundColor="green"
+      textColor="black"
+      hoverDarken={true}
+    >
       Submit
     </Button>
   );

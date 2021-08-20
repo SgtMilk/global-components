@@ -9,7 +9,6 @@ export interface DateInstanceProps {
 
 /**
  * This component will display a date
- *
  * @param value (Date ts object)
  * @param size (the size if the component, will default to 1, optional)
  * @param style (React.CSSProperties, optional)
@@ -21,7 +20,10 @@ export const DateInstance: FC<DateInstanceProps> = ({
   style = {},
 }): ReactElement => {
   return (
-    <div style={{ ...functionCSS.text(size), ...style }}>
+    <div
+      style={{ ...functionCSS.text(size), ...style }}
+      data-testid="DateDisplay"
+    >
       {value.toDateString()}
     </div>
   );

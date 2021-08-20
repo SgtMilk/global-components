@@ -1,10 +1,14 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { BooleanInstance } from "./BooleanInstance";
 
-const value: boolean = true;
-
 test("renders BooleanInstance component", () => {
-  const booleanInstance = render(<BooleanInstance value={value} />);
+  const booleanInstance = render(<BooleanInstance value={true} />);
   expect(booleanInstance).toBeTruthy();
+});
+
+test("renders BooleanInstance with weird value", () => {
+  const booleanInstance = render(<BooleanInstance value={!!""} />);
+  expect(booleanInstance).toBeTruthy();
+  expect(screen.getAllByTestId("BooleanDisplay")).toHaveLength(1);
 });

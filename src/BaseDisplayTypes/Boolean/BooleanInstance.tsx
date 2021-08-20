@@ -9,7 +9,6 @@ export interface BooleanInstanceProps {
 
 /**
  * This component will display a boolean
- *
  * @param value (boolean)
  * @param size (the size if the component, will default to 1, optional)
  * @param style (React.CSSProperties, optional)
@@ -21,6 +20,9 @@ export const BooleanInstance: FC<BooleanInstanceProps> = ({
   style = {},
 }): ReactElement => {
   return (
-    <div style={{ ...functionCSS.text(size), ...style }}>{`${value}`}</div>
+    <div
+      style={{ ...functionCSS.text(size), ...style }}
+      data-testid="BooleanDisplay"
+    >{`${value}`}</div>
   );
 };

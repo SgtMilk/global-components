@@ -16,7 +16,6 @@ export interface DelegateProps {
 /**
  * This component will display of any of the following types:
  * array, boolean, Date ts object, number, json-type object, string
- *
  * @param value (array, boolean, Date ts object, number, json-type object, string)
  * @param size (the size if the component, will default to 1, optional)
  * @param style (React.CSSProperties, optional)
@@ -37,8 +36,17 @@ export const Delegate: FC<DelegateProps> = (props): ReactElement => {
         return <ArrayInstance {...props} />;
       else if (props.value instanceof Object)
         return <ObjectInstance {...props} />;
-      else return <p style={{ color: "red" }}>Invalid type</p>;
+      else
+        return (
+          <p style={{ color: "red" }} data-testid="DelegateError">
+            Invalid type
+          </p>
+        );
     default:
-      return <p style={{ color: "red" }}>Invalid type</p>;
+      return (
+        <p style={{ color: "red" }} data-testid="DelegateError">
+          Invalid type
+        </p>
+      );
   }
 };

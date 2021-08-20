@@ -9,7 +9,6 @@ export interface StringInstanceProps {
 
 /**
  * This component will display a string
- *
  * @param value (string)
  * @param size (the size if the component, will default to 1, optional)
  * @param style (React.CSSProperties, optional)
@@ -20,5 +19,12 @@ export const StringInstance: FC<StringInstanceProps> = ({
   size = 1,
   style = {},
 }): ReactElement => {
-  return <div style={{ ...functionCSS.text(size), ...style }}>{value}</div>;
+  return (
+    <div
+      style={{ ...functionCSS.text(size), ...style }}
+      data-testid="StringDisplay"
+    >
+      {value}
+    </div>
+  );
 };

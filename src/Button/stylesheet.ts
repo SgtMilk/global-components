@@ -25,8 +25,11 @@ export const button = (
   transition: "0.3s",
 });
 
-export const hoverAnimation = (hoverDarken: boolean) => `
-.button:hover{
-  filter: brightness(${hoverDarken ? 0.75 : 1.5});
+export const hoverAnimation = `
+.buttonDarken:hover{
+  filter: brightness(0.75);
+}
+.buttonLighten:hover{
+  filter: brightness(1.5);
 }
 `;

@@ -33,9 +33,10 @@ export const Button: FC<ButtonProps> = ({
 }): ReactElement => {
   return (
     <div>
-      <style>{hoverAnimation(hoverDarken)}</style>
+      <style>{hoverAnimation}</style>
       <div
         onClick={onClick}
+        className={hoverDarken ? "buttonDarken" : "buttonLighten"}
         style={{ ...button(size, backgroundColor, textColor), ...style }}
       >
         {children}

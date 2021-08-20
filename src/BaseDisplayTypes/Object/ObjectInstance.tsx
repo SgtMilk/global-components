@@ -10,7 +10,6 @@ export interface ObjectInstanceProps {
 
 /**
  * This component will display a json-type object
- *
  * @param value (json-type object)
  * @param size (the size if the component, will default to 1, optional)
  * @param style (React.CSSProperties, optional)
@@ -22,7 +21,10 @@ export const ObjectInstance: FC<ObjectInstanceProps> = ({
   style = {},
 }): ReactElement => {
   return (
-    <ul style={{ ...functionCSS.text(size), ...style }}>
+    <ul
+      style={{ ...functionCSS.text(size), ...style }}
+      data-testid="ObjectDisplay"
+    >
       {Object.entries(value).map(([k, v], index) => {
         const delegateProps: DelegateProps = {
           value: v,

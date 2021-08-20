@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FormInstance, TYPE } from "../FormInstance";
 
 export const TestComponent = () => {
-  let [value, updateValue] = useState(null);
+  let [value, updateValue] = useState(undefined);
   return (
     <FormInstance
       values={[

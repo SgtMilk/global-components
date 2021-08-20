@@ -10,7 +10,6 @@ export interface ArrayInstanceProps {
 
 /**
  * This component will display an array
- *
  * @param value (Array of any type)
  * @param size (the size if the component, will default to 1, optional)
  * @param style (React.CSSProperties, optional)
@@ -22,7 +21,10 @@ export const ArrayInstance: FC<ArrayInstanceProps> = ({
   style = {},
 }): ReactElement => {
   return (
-    <ul style={{ ...functionCSS.text(size), ...style }}>
+    <ul
+      style={{ ...functionCSS.text(size), ...style }}
+      data-testid="ArrayDisplay"
+    >
       {value.map((v, index) => {
         const delegateProps: DelegateProps = {
           value: v,
