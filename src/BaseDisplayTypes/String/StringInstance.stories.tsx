@@ -1,4 +1,3 @@
-import React from "react";
 import { StringInstance } from "./StringInstance";
 
 export default {

@@ -1,4 +1,3 @@
-import React from "react";
 import { BooleanInstance } from "./BooleanInstance";
 
 export default {

@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, ReactNode } from "react";
+import { FC, ReactElement, ReactNode } from "react";
 import { button, hoverAnimation } from "./stylesheet";
 
 export interface ButtonProps {

@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrayInstance } from "./ArrayInstance";
 
 export default {

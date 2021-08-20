@@ -1,4 +1,3 @@
-import React from "react";
 import { ObjectInstance } from "./ObjectInstance";
 
 export default {

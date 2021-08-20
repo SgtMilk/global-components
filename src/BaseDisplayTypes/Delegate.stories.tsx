@@ -1,4 +1,3 @@
-import React from "react";
 import { Delegate } from "./Delegate";
 
 export default {

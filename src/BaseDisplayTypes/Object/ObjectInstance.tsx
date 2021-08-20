@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from "react";
+import { FC, ReactElement } from "react";
 import { Delegate, DelegateProps } from "../Delegate";
 import { functionCSS } from "../stylesheet";
 

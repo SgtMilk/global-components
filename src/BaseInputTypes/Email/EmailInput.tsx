@@ -1,4 +1,4 @@
-import React, { useState, ReactElement, FC } from "react";
+import { useState, ReactElement, FC } from "react";
 import stylesheet from "../stylesheet";
 
 export interface EmailInputProps {

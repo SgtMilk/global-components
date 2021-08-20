@@ -1,4 +1,3 @@
-import React from "react";
 import { NumberInstance } from "./NumberInstance";
 
 export default {

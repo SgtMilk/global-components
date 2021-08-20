@@ -1,4 +1,3 @@
-import React from "react";
 import { DateInstance } from "./DateInstance";
 
 export default {
