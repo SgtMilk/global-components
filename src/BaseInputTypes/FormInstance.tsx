@@ -1,3 +1,5 @@
+// Copyright (c) 2021 Alix Routhier-Lalonde. Licence included in root of package.
+
 import { FC, ReactElement } from "react";
 import { BooleanInput } from "./Boolean/BooleanInput";
 import { DateInput } from "./Date/DateInput";

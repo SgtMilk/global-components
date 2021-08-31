@@ -1,7 +1,9 @@
+// Copyright (c) 2021 Alix Routhier-Lalonde. Licence included in root of package.
+
 import { FC, ReactElement } from "react";
 import { functionCSS } from "./stylesheet";
 
-interface SpacerProps {
+export interface SpacerProps {
   size?: number;
 }
 

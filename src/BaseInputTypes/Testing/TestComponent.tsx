@@ -1,3 +1,5 @@
+// Copyright (c) 2021 Alix Routhier-Lalonde. Licence included in root of package.
+
 import { useState } from "react";
 import { FormInstance, TYPE } from "../FormInstance";
 

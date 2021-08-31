@@ -1,7 +1,9 @@
+// Copyright (c) 2021 Alix Routhier-Lalonde. Licence included in root of package.
+
 import { ReactElement, FC, useState } from "react";
 import stylesheet from "../stylesheet";
 import { Visibility, VisibilityOff } from "@material-ui/icons";
-import { Spacer } from "index";
+import { Spacer } from "../..";
 
 export interface PasswordInputProps {
   name: string;

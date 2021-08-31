@@ -1,5 +1,6 @@
-import { FC, ReactElement } from "react";
+// Copyright (c) 2021 Alix Routhier-Lalonde. Licence included in root of package.
 
+import { FC, ReactElement } from "react";
 import { ArrayInstance } from "./Array/ArrayInstance";
 import { BooleanInstance } from "./Boolean/BooleanInstance";
 import { DateInstance } from "./Date/DateInstance";

@@ -131,11 +131,6 @@ var BooleanInput = function (_a) {
     return (jsxRuntime.jsxs("div", __assign({ style: __assign(__assign({}, stylesheet.inputBox(size, backgroundColor)), style), "data-testid": "BooleanInput" }, { children: [jsxRuntime.jsx("style", { children: "\n        .input {\n          all: unset;\n        }\n      " }, void 0), jsxRuntime.jsx("input", { type: "checkbox", onChange: handleUpdate, style: __assign({ width: "100%" }, stylesheet.checkbox(size)), name: name, id: name, placeholder: placeholder, value: value, autoComplete: "off" }, void 0), jsxRuntime.jsx("label", __assign({ style: stylesheet.text(textColor) }, { children: name }), void 0)] }), void 0));
 };
 
-var BooleanInput$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    BooleanInput: BooleanInput
-});
-
 /**
  * This component will display an input for an email. It will show an indicator if the email is valid
  * @param name (string)
@@ -153,11 +148,6 @@ var DateInput = function (_a) {
     };
     return (jsxRuntime.jsxs("div", __assign({ style: __assign(__assign({}, stylesheet.inputBox(size, backgroundColor)), style), "data-testid": "DateInput" }, { children: [jsxRuntime.jsx("style", { children: "\n        .input {\n          all: unset;\n        }\n      " }, void 0), jsxRuntime.jsx("input", { type: "date", onChange: handleUpdate, style: __assign({ width: "100%" }, stylesheet.text(textColor)), name: name, id: name, placeholder: placeholder, className: "input", value: value, autoComplete: "off" }, void 0)] }), void 0));
 };
-
-var DateInput$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    DateInput: DateInput
-});
 
 /**
  * This component will display an input for an email. It will show an indicator if the email is valid
@@ -180,11 +170,6 @@ var EmailInput = function (_a) {
     return (jsxRuntime.jsxs("div", __assign({ style: __assign(__assign({}, stylesheet.inputBox(size, backgroundColor)), style), "data-testid": "EmailInput" }, { children: [jsxRuntime.jsx("style", { children: "\n        .input {\n          all: unset;\n        }\n      " }, void 0), jsxRuntime.jsx("input", { type: "email", onChange: ValidateEmail, style: __assign({ width: "100%" }, stylesheet.text(textColor)), name: name, id: name, placeholder: placeholder, className: "input", value: value, autoComplete: "off" }, void 0), jsxRuntime.jsx("div", { style: stylesheet.icon(size, errorMessage ? "limegreen" : "red") }, void 0)] }), void 0));
 };
 
-var EmailInput$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    EmailInput: EmailInput
-});
-
 /**
  * This component will display an input for a number.
  * @param name (string)
@@ -202,11 +187,6 @@ var NumberInput = function (_a) {
     };
     return (jsxRuntime.jsxs("div", __assign({ style: __assign(__assign({}, stylesheet.inputBox(size, backgroundColor)), style), "data-testid": "NumberInput" }, { children: [jsxRuntime.jsx("style", { children: "\n        .input {\n          all: unset;\n        }\n      " }, void 0), jsxRuntime.jsx("input", { type: "number", style: __assign({ width: "100%" }, stylesheet.text(textColor)), name: name, id: name, onChange: handleUpdate, placeholder: placeholder, className: "input", value: value, autoComplete: "off" }, void 0)] }), void 0));
 };
-
-var NumberInput$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    NumberInput: NumberInput
-});
 
 /**
  * This component will display an input for a password.
@@ -233,11 +213,6 @@ var PasswordInput = function (_a) {
     return (jsxRuntime.jsxs("div", __assign({ style: __assign(__assign({}, stylesheet.inputBox(size, backgroundColor)), style), "data-testid": "PasswordInput" }, { children: [jsxRuntime.jsx("style", { children: "\n        .input {\n          all: unset;\n        }\n      " }, void 0), jsxRuntime.jsx("input", { type: visible ? "text" : "password", style: __assign({ width: "100%" }, stylesheet.text(textColor)), onChange: handleUpdate, placeholder: placeholder, className: "input", value: value, autoComplete: "off" }, void 0), jsxRuntime.jsxs("div", __assign({ style: stylesheet.inlineFlex }, { children: [color === undefined ? null : (jsxRuntime.jsx("div", { style: stylesheet.icon(size, color ? "limegreen" : "red") }, void 0)), jsxRuntime.jsx(Spacer, { size: size * 2 }, void 0), jsxRuntime.jsx("div", __assign({ onClick: updateVisibility, className: "input", style: stylesheet.inlineFlex }, { children: visible ? (jsxRuntime.jsx(icons.VisibilityOff, { style: stylesheet.visibilityIcon(size, textColor) }, void 0)) : (jsxRuntime.jsx(icons.Visibility, { style: stylesheet.visibilityIcon(size, textColor) }, void 0)) }), void 0)] }), void 0)] }), void 0));
 };
 
-var PasswordInput$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    PasswordInput: PasswordInput
-});
-
 /**
  * This component will display an input for an email. It will show an indicator if the email is valid
  * @param placeholder (string)
@@ -254,11 +229,6 @@ var StringInput = function (_a) {
     };
     return (jsxRuntime.jsxs("div", __assign({ style: __assign(__assign({}, stylesheet.inputBox(size, backgroundColor)), style), "data-testid": "StringInput" }, { children: [jsxRuntime.jsx("style", { children: "\n        .input {\n          all: unset;\n        }\n      " }, void 0), jsxRuntime.jsx("input", { type: "text", onChange: handleUpdate, style: __assign({ width: "100%" }, stylesheet.text(textColor)), placeholder: placeholder, className: "input", value: value, autoComplete: "off" }, void 0)] }), void 0));
 };
-
-var StringInput$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    StringInput: StringInput
-});
 
 /**
  * This component will display a select input
@@ -281,12 +251,7 @@ var SelectInput = function (_a) {
                         : null] }), void 0)] }), void 0));
 };
 
-var SelectInput$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    SelectInput: SelectInput
-});
-
-var TYPE;
+exports.TYPE = void 0;
 (function (TYPE) {
     TYPE[TYPE["boolean"] = 0] = "boolean";
     TYPE[TYPE["date"] = 1] = "date";
@@ -296,7 +261,7 @@ var TYPE;
     TYPE[TYPE["repeatedPassword"] = 5] = "repeatedPassword";
     TYPE[TYPE["select"] = 6] = "select";
     TYPE[TYPE["string"] = 7] = "string";
-})(TYPE || (TYPE = {}));
+})(exports.TYPE || (exports.TYPE = {}));
 /**
  * This component will display a form from an input array of wanted input fields
  * @param size (number, optional)
@@ -316,26 +281,26 @@ var FormInstance = function (_a) {
         var values = _a.values, _b = _a.size, size = _b === void 0 ? 1 : _b, _c = _a.style, style = _c === void 0 ? {} : _c;
         return values.map(function (value, index) {
             switch (value.type) {
-                case TYPE.boolean:
+                case exports.TYPE.boolean:
                     return (jsxRuntime.jsx("div", __assign({ style: stylesheet.inputContainer(size) }, { children: jsxRuntime.jsx(BooleanInput, __assign({ size: size }, value, { style: style }), void 0) }), index));
-                case TYPE.date:
+                case exports.TYPE.date:
                     return (jsxRuntime.jsx("div", __assign({ style: stylesheet.inputContainer(size) }, { children: jsxRuntime.jsx(DateInput, __assign({ size: size }, value, { style: style }), void 0) }), index));
-                case TYPE.email:
+                case exports.TYPE.email:
                     return (jsxRuntime.jsx("div", __assign({ style: stylesheet.inputContainer(size) }, { children: jsxRuntime.jsx(EmailInput, __assign({ size: size }, value, { style: style }), void 0) }), index));
-                case TYPE.number:
+                case exports.TYPE.number:
                     return (jsxRuntime.jsx("div", __assign({ style: stylesheet.inputContainer(size) }, { children: jsxRuntime.jsx(NumberInput, __assign({ size: size }, value, { style: style }), void 0) }), index));
-                case TYPE.password:
+                case exports.TYPE.password:
                     return (jsxRuntime.jsx("div", __assign({ style: stylesheet.inputContainer(size) }, { children: jsxRuntime.jsx(PasswordInput, __assign({ size: size }, value, { style: style }), void 0) }), index));
-                case TYPE.repeatedPassword:
-                    if (values[index - 1].type === TYPE.password) {
+                case exports.TYPE.repeatedPassword:
+                    if (values[index - 1].type === exports.TYPE.password) {
                         return (jsxRuntime.jsx("div", __assign({ style: stylesheet.inputContainer(size) }, { children: jsxRuntime.jsx(PasswordInput, __assign({ size: size, color: value.value === values[index - 1].value &&
                                     value.value !== "" }, value, { style: style }), void 0) }), index));
                     }
                     else
                         return null;
-                case TYPE.select:
+                case exports.TYPE.select:
                     return (jsxRuntime.jsx("div", __assign({ style: stylesheet.inputContainer(size) }, { children: jsxRuntime.jsx(SelectInput, __assign({ size: size }, value, { style: style }), void 0) }), index));
-                case TYPE.string:
+                case exports.TYPE.string:
                     return (jsxRuntime.jsx("div", __assign({ style: stylesheet.inputContainer(size) }, { children: jsxRuntime.jsx(StringInput, __assign({ size: size }, value, { style: style }), void 0) }), index));
                 default:
                     return null;
@@ -344,24 +309,6 @@ var FormInstance = function (_a) {
     };
     return (jsxRuntime.jsx("form", __assign({ style: __assign({}, stylesheet.formContainer), onSubmit: function (event) { return event.preventDefault(); }, autoComplete: "off" }, { children: DisplayForm({ values: values, size: size, style: style }) }), void 0));
 };
-
-var FormInstance$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    get TYPE () { return TYPE; },
-    FormInstance: FormInstance
-});
-
-var index$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    Boolean: BooleanInput$1,
-    Date: DateInput$1,
-    Email: EmailInput$1,
-    Number: NumberInput$1,
-    Password: PasswordInput$1,
-    String: StringInput$1,
-    Select: SelectInput$1,
-    Form: FormInstance$1
-});
 
 var functionCSS$1 = {
     text: function (size) { return ({
@@ -389,11 +336,6 @@ var ArrayInstance = function (_a) {
         }) }), void 0));
 };
 
-var ArrayInstance$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    ArrayInstance: ArrayInstance
-});
-
 /**
  * This component will display a boolean
  * @param value (boolean)
@@ -405,11 +347,6 @@ var BooleanInstance = function (_a) {
     var value = _a.value, _b = _a.size, size = _b === void 0 ? 1 : _b, _c = _a.style, style = _c === void 0 ? {} : _c;
     return (jsxRuntime.jsx("div", __assign({ style: __assign(__assign({}, functionCSS$1.text(size)), style), "data-testid": "BooleanDisplay" }, { children: "" + value }), void 0));
 };
-
-var BooleanInstance$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    BooleanInstance: BooleanInstance
-});
 
 /**
  * This component will display a date
@@ -423,11 +360,6 @@ var DateInstance = function (_a) {
     return (jsxRuntime.jsx("div", __assign({ style: __assign(__assign({}, functionCSS$1.text(size)), style), "data-testid": "DateDisplay" }, { children: value.toDateString() }), void 0));
 };
 
-var DateInstance$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    DateInstance: DateInstance
-});
-
 /**
  * This component will display a number
  * @param value (number)
@@ -439,11 +371,6 @@ var NumberInstance = function (_a) {
     var value = _a.value, _b = _a.size, size = _b === void 0 ? 1 : _b, _c = _a.style, style = _c === void 0 ? {} : _c;
     return (jsxRuntime.jsx("div", __assign({ style: __assign(__assign({}, functionCSS$1.text(size)), style), "data-testid": "NumberDisplay" }, { children: value }), void 0));
 };
-
-var NumberInstance$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    NumberInstance: NumberInstance
-});
 
 /**
  * This component will display a json-type object
@@ -465,11 +392,6 @@ var ObjectInstance = function (_a) {
         }) }), void 0));
 };
 
-var ObjectInstance$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    ObjectInstance: ObjectInstance
-});
-
 /**
  * This component will display a string
  * @param value (string)
@@ -481,11 +403,6 @@ var StringInstance = function (_a) {
     var value = _a.value, _b = _a.size, size = _b === void 0 ? 1 : _b, _c = _a.style, style = _c === void 0 ? {} : _c;
     return (jsxRuntime.jsx("div", __assign({ style: __assign(__assign({}, functionCSS$1.text(size)), style), "data-testid": "StringDisplay" }, { children: value }), void 0));
 };
-
-var StringInstance$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    StringInstance: StringInstance
-});
 
 /**
  * This component will display of any of the following types:
@@ -517,22 +434,6 @@ var Delegate = function (props) {
             return (jsxRuntime.jsx("p", __assign({ style: { color: "red" }, "data-testid": "DelegateError" }, { children: "Invalid type" }), void 0));
     }
 };
-
-var Delegate$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    Delegate: Delegate
-});
-
-var index = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    Delegate: Delegate$1,
-    Array: ArrayInstance$1,
-    Boolean: BooleanInstance$1,
-    Date: DateInstance$1,
-    Number: NumberInstance$1,
-    Object: ObjectInstance$1,
-    String: StringInstance$1
-});
 
 var button = function (size, backgroundColor, textColor) { return (__assign(__assign({ 
     // font stuff
@@ -572,8 +473,21 @@ var Spacer = function (_a) {
     return jsxRuntime.jsx("div", { style: functionCSS.box(size) }, void 0);
 };
 
+exports.ArrayInstance = ArrayInstance;
+exports.BooleanInput = BooleanInput;
+exports.BooleanInstance = BooleanInstance;
 exports.Button = Button;
-exports.Display = index;
-exports.Input = index$1;
+exports.DateInput = DateInput;
+exports.DateInstance = DateInstance;
+exports.Delegate = Delegate;
+exports.EmailInput = EmailInput;
+exports.FormInstance = FormInstance;
+exports.NumberInput = NumberInput;
+exports.NumberInstance = NumberInstance;
+exports.ObjectInstance = ObjectInstance;
+exports.PasswordInput = PasswordInput;
+exports.SelectInput = SelectInput;
 exports.Spacer = Spacer;
+exports.StringInput = StringInput;
+exports.StringInstance = StringInstance;
 //# sourceMappingURL=index.js.map

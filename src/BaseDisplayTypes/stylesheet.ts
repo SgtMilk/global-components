@@ -1,5 +1,7 @@
+// Copyright (c) 2021 Alix Routhier-Lalonde. Licence included in root of package.
+
 import { CSSProperties } from "react";
-import { fonts } from "style";
+import { fonts } from "../style";
 
 export const objectCSS: { [key: string]: CSSProperties } = {
   padding: {
