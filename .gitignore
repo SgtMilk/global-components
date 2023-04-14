@@ -27,3 +27,8 @@ yarn-error.log*
 .firebaserc
 .github/
 firebase.json
+
+# builds
+public/
+storybook-static/
+dist/
