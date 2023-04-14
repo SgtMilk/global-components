@@ -25,19 +25,17 @@
     "@babel/polyfill": "^7.12.1",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "typescript": "^4.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-rollup":"rollup -c",
-    "start-rollup":"rollup -c -w",
+    "build-rollup": "rollup -c",
+    "start-rollup": "rollup -c -w",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "storybook dev",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
@@ -62,12 +60,15 @@
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-typescript": "^7.15.0",
-    "@storybook/addon-actions": "^6.2.9",
-    "@storybook/addon-essentials": "^6.2.9",
-    "@storybook/addon-links": "^6.2.9",
-    "@storybook/node-logger": "^6.2.9",
-    "@storybook/preset-create-react-app": "^3.1.7",
-    "@storybook/react": "^6.2.9",
+    "@storybook/addon-actions": "^7",
+    "@storybook/addon-essentials": "^7",
+    "@storybook/addon-links": "^7",
+    "@storybook/addon-mdx-gfm": "^7.0.4",
+    "@storybook/cli": "^7.0.4",
+    "@storybook/node-logger": "^7",
+    "@storybook/preset-create-react-app": "^7",
+    "@storybook/react": "^7",
+    "@storybook/react-webpack5": "^7.0.4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -77,13 +78,16 @@
     "@types/react-dom": "^17.0.0",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
-    "react-scripts": "4.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5",
     "rollup": "^2.56.2",
     "rollup-plugin-sass": "^1.2.4",
-    "rollup-plugin-typescript2": "^0.30.0"
+    "rollup-plugin-typescript2": "^0.30.0",
+    "storybook": "^7.0.4"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
