@@ -42,4 +42,4 @@ Here is a list of other components that are included in this library:
 
 ## Copyright
 
-Copyright (c) 2021 Alix Routhier-Lalonde. Licence included in root of package.
+Copyright (c) 2023 Alix Routhier-Lalonde. Licence included in root of package.
