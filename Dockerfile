@@ -4,6 +4,5 @@ WORKDIR /app
 
 COPY package*.json .
 
-RUN npm i
-RUN npm install -g eslint
+RUN npm i --production=false
 COPY . .
