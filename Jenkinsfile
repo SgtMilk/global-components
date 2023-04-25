@@ -2,6 +2,12 @@ pipeline {
     agent { dockerfile true }
 
     stages {
+        stage('Dependencies') {
+            steps {
+                echo 'Getting Dependencies..'
+                sh 'npm i'
+            }
+        }
         stage('Linting') {
             steps {
                 echo 'Linting..'
