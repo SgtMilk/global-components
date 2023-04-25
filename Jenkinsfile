@@ -5,7 +5,6 @@ pipeline {
         stage('Dependencies') {
             steps {
                 echo 'Getting Dependencies..'
-                sh 'chown -R 110:114 "/.npm'
                 sh 'npm i'
             }
         }
