@@ -5,6 +5,7 @@ pipeline {
         stage('Dependencies') {
             steps {
                 echo 'Getting Dependencies..'
+                sh "sudo npm cache clean --force"
                 sh 'npm i'
             }
         }
