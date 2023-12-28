@@ -2,6 +2,8 @@
 
 I often had to re-use base components in my projects. Here is a collection of base components to import in your projects.
 
+[![Build Status](https://sgtmilk.ddns.net:9091/buildStatus/icon?job=global-components)](https://sgtmilk.ddns.net:9091/job/global-components/)
+
 ## Storybook
 
 To see instances of these components and documentation, you can go to https://golbal-components-docs.web.app
@@ -42,4 +44,4 @@ Here is a list of other components that are included in this library:
 
 ## Copyright
 
-Copyright (c) 2021 Alix Routhier-Lalonde. Licence included in root of package.
+Copyright (c) 2023 Alix Routhier-Lalonde. Licence included in root of package.
